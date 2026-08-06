@@ -1,0 +1,55 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+local.properties
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+
+# Node / Electron
+node_modules/
+dist/
+release/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Android / Gradle
+.gradle/
+**/build/
+.cxx/
+.externalNativeBuild/
+captures/
+.tools/
+*.apk
+*.aab
+
+# Python / Django
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+staticfiles/
+media/
+*.sqlite3
+
+# IDEs and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary archives and checksums
+*.tmp
+*.bak

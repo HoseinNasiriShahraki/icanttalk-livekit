@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">iCANTtalk</string>
+    <string name="call_channel_name">Active voice call</string>
+    <string name="call_notification_title">iCANTtalk is connected</string>
+</resources>

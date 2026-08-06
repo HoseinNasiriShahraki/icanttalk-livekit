@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a reproducible problem in Windows, Android, or Django
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Windows
+        - Android
+        - Django endpoint
+        - Cross-platform
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 1.1.1
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Describe the actual and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Join Room 1
+        2. Enable camera
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Remove tokens, keys, private URLs, and personal data.
+      render: shell
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials and private information.
+          required: true

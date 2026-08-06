@@ -1,0 +1,26 @@
+name: Django endpoint checks
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "server/django/**"
+      - ".github/workflows/django.yml"
+  pull_request:
+    paths:
+      - "server/django/**"
+      - ".github/workflows/django.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r server/django/requirements.txt
+      - name: Compile Python source
+        run: python -m compileall -q server/django/icanttalk_livekit server/django/test_endpoint.py
