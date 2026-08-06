@@ -20,6 +20,9 @@
 </p>
 
 ![Windows room view](docs/images/windows-room.png)
+<img width="1622" height="963" alt="image" src="https://github.com/user-attachments/assets/80b636f3-a12a-4ad5-8a71-14ec30423017" />
+
+
 
 ## Overview
 
