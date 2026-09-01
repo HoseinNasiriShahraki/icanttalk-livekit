@@ -66,8 +66,7 @@
       "createStartMenuShortcut": true,
       "shortcutName": "iCANTTalk",
       "runAfterFinish": true,
-      "deleteAppDataOnUninstall": false,
-      "include": "build/installer.nsh"
+      "deleteAppDataOnUninstall": false
     },
     "portable": {
       "artifactName": "iCANTTalk-Portable-${version}-${arch}.${ext}"
