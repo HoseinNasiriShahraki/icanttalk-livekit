@@ -74,7 +74,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
-    implementation("io.livekit:livekit-android:2.27.0")
+    implementation("io.livekit:livekit-android:2.28.1")
     implementation("io.livekit:krisp-noise-filter:0.0.15")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
